@@ -1,7 +1,7 @@
 {
   "name": "gothub",
   "description": "A convenience wrapper for `got` to interact with the GitHub API (very similar to gh-got).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "John Flesch <john@fles.ch>",
   "bugs": {
     "url": "https://github.com/flesch/gothub/issues"

@@ -20,7 +20,7 @@ function gothub(options) {
     if (!path) {
       throw new Error('"path" is required');
     }
-    
+
     if (typeof opts === 'function') {
       callback = opts;
       opts = {};
@@ -43,7 +43,7 @@ function gothub(options) {
   		opts.headers['content-length'] = 0;
   	}
 
-  	return got(this.endpoint + path, opts, callback);
+  	return got((this.endpioint + '/' + path).replace(/\/+/g, '/'), opts, callback);
 
   };
 
