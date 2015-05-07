@@ -43,7 +43,7 @@ function gothub(options) {
   		opts.headers['content-length'] = 0;
   	}
 
-  	return got((this.endpioint + '/' + path).replace(/\/+/g, '/'), opts, callback);
+  	return got(this.endpoint + ('/' + path).replace(/\/+/g, '/'), opts, callback);
 
   };
 
